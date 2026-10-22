@@ -1,0 +1,195 @@
+/* CSS Document */
+body 
+{
+	line-height: 1.3em;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font-family:"Trebuchet MS";
+	font-size:12px;
+}
+.banner
+{
+	margin-top:5px;
+	background-image:url(../imagenes/adunas-der.jpg);
+	background-position:right;
+	background-repeat:no-repeat;
+	background-color: #74B743;
+	margin-left:5px;
+	margin-right:5px;
+}
+a{
+ color:#999999;
+ 
+}
+a:hover {
+
+	color: #999933;
+}
+.activo{
+
+	background-color:#999933;
+}
+.banner_abajo{
+	height: 90px;
+}
+.banner_abajo2{
+	height: 40px;
+	margin-left:5px;
+	margin-right:5px;
+	
+}
+.general{
+	height: 40px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:15px;
+}
+.menu{
+	height: 20px;
+}
+fieldset{
+	margin: 10px 40px 5px 5px;	
+}
+.acceso{
+	height: 200px;
+	margin-left: 300px;
+	margin-right: 2px;
+}
+.texto{
+	BORDER-TOP: #727272 1px solid; 
+	BORDER-LEFT: #727272 1px solid; 
+	BORDER-BOTTOM: #727272 1px solid; 
+	border-right: #727272 1px solid;
+	font-size:12px;
+	color:#0033CC;
+}
+.tabla1{
+	BORDER-TOP: #727272 1px solid; 
+	BORDER-LEFT: #727272 1px solid; 
+	BORDER-BOTTOM: #727272 1px solid; 
+	border-right: #727272 1px solid;
+	font-family:"Trebuchet MS";
+	font-size:12px;
+}
+.th_1{
+	BORDER-TOP: #727272 1px solid; 
+	BORDER-LEFT: #727272 1px solid; 
+	BORDER-BOTTOM: #727272 1px solid; 
+	border-right: #727272 1px solid;
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	background-color:#D8F8C9;
+}
+.th_2{
+
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	background-color:#F7F7F7;
+}
+.th_3{
+
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	background-color:#EDEDED;
+}
+.th_4{
+
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	background-color:#316AC5;
+}
+.th_5{
+
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	background-color:#74B743;
+}
+.marco{
+ BORDER-RIGHT: 1px inset; WIDTH: 850px; HEIGHT: 400px;
+ PADDING-RIGHT: 6px; BORDER-TOP:1px solid; PADDING-LEFT: 6px; 
+ PADDING-BOTTOM: 6px; MARGIN: 0px; OVERFLOW: auto; 
+ BORDER-LEFT: 1px solid;  PADDING-TOP: 6px; BORDER-RIGHT: 1px solid;
+ BORDER-BOTTOM: 1px solid;  color:#1C1062
+}
+.marco1{
+ BORDER-RIGHT: 1px inset; WIDTH: 900px; HEIGHT: 400px;
+ PADDING-RIGHT: 6px; BORDER-TOP:1px solid; PADDING-LEFT: 6px; 
+ PADDING-BOTTOM: 6px; MARGIN: 0px; OVERFLOW: auto; 
+ BORDER-LEFT: 1px solid;  PADDING-TOP: 6px; BORDER-RIGHT: 1px solid;
+ BORDER-BOTTOM: 1px solid;  color:#1C1062
+}
+.marco2{
+BORDER-RIGHT: 1px inset; WIDTH: 620px; HEIGHT: 95px;
+ PADDING-RIGHT: 6px; BORDER-TOP:1px solid; PADDING-LEFT: 6px; 
+ PADDING-BOTTOM: 6px; MARGIN: 0px;  
+ BORDER-LEFT: 1px solid;  PADDING-TOP: 6px; BORDER-RIGHT: 1px solid;
+ BORDER-BOTTOM: 1px solid;  color:#1C1062
+}
+.marco3{
+BORDER-RIGHT: 1px inset; WIDTH: 630px; HEIGHT: 135px;
+ PADDING-RIGHT: 6px; BORDER-TOP:1px solid; PADDING-LEFT: 6px; 
+ PADDING-BOTTOM: 6px; MARGIN: 0px;  OVERFLOW: auto; 
+ BORDER-LEFT: 1px solid;  PADDING-TOP: 6px; BORDER-RIGHT: 1px solid;
+ BORDER-BOTTOM: 1px solid;  color:#1C1062
+}
+.marco4{
+BORDER-RIGHT: 1px inset; WIDTH: 560px; HEIGHT: 350px;
+ PADDING-RIGHT: 6px; BORDER-TOP:1px solid; PADDING-LEFT: 6px; 
+ PADDING-BOTTOM: 6px; MARGIN: 0px;  OVERFLOW: auto; 
+ BORDER-LEFT: 1px solid;  PADDING-TOP: 6px; BORDER-RIGHT: 1px solid;
+ BORDER-BOTTOM: 1px solid;  color:#1C1062
+}
+.marco5{
+BORDER-RIGHT: 1px inset; WIDTH: 700px; HEIGHT: 400px;
+ PADDING-RIGHT: 6px; BORDER-TOP:1px solid; PADDING-LEFT: 6px; 
+ PADDING-BOTTOM: 6px; MARGIN: 0px; OVERFLOW: auto; 
+ BORDER-LEFT: 1px solid;  PADDING-TOP: 6px; BORDER-RIGHT: 1px solid;
+ BORDER-BOTTOM: 1px solid;  color:#1C1062
+}
+.marco6{
+ BORDER-RIGHT: 1px inset; WIDTH: 910px; HEIGHT: 400px;
+ PADDING-RIGHT: 6px; BORDER-TOP:1px solid; PADDING-LEFT: 6px; 
+ PADDING-BOTTOM: 6px; MARGIN: 0px; OVERFLOW: auto; 
+ BORDER-LEFT: 1px solid;  PADDING-TOP: 6px; BORDER-RIGHT: 1px solid;
+ BORDER-BOTTOM: 1px solid;  color:#1C1062
+}
+.marco .titulo{
+text-align:center;color:#29166F; background:#CED9ED;height: 15px;font-weight:bold;
+}
+.marco  .izq{
+	WIDTH: 95%; HEIGHT: 90%;
+}
+.marco2 .titulo{
+text-align:center;color:#29166F; background:#CED9ED;height: 15px;font-weight:bold;
+}
+.marco2  .izq{
+	WIDTH: 95%; HEIGHT: 90%;
+}
+.marco3 .titulo{
+text-align:center;color:#29166F; background:#CED9ED;height: 15px;font-weight:bold;
+}
+.marco3  .izq{
+	WIDTH: 95%; HEIGHT: 90%;
+}
+.marco4 .titulo{
+text-align:center;color:#29166F; background:#CED9ED;height: 15px;font-weight:bold;
+}
+.marco4  .izq{
+	WIDTH: 90%; HEIGHT: 90%;
+}
+
+.marco5 .titulo{
+text-align:center;color:#29166F; background:#CED9ED;height: 15px;font-weight:bold;
+}
+.marco5  .izq{
+	WIDTH: 90%; HEIGHT: 90%;
+}
+.tabla2{
+	BORDER-TOP: #727272 1px solid; 
+	BORDER-LEFT: #727272 1px solid; 
+	BORDER-BOTTOM: #727272 1px solid; 
+	border-right: #727272 1px solid;
+	font-family:"Trebuchet MS";
+	font-size:5px;
+}

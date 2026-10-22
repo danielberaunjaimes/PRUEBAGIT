@@ -1,0 +1,36 @@
+<?php
+	session_start();
+	require("../utiles/config.php");
+	require("../utiles/mysqldatabase.php");
+	$dni = $_POST["dni1"];
+	$fechareg = $_POST["fechareg1"];
+	$apellidos = $_POST["apellidos1"];
+	$nombres = $_POST["nombres1"];
+ 	$direccion = $_POST["direccion1"];
+	$contrato = $_POST["contrato1"];
+	$fecharfin = $_POST["fecharfin1"];
+	$resolucion  = $_POST["resolucion1"];
+	$tipo = $_POST["tipo1"];
+	$nivel = $_POST["nivel1"];
+	$asignacion = $_POST["asignacion1"];
+	$dependencia = $_POST["dependencia1"];
+	$area = $_POST["area1"];
+	$titulo = $_POST["titulo1"];
+	$especialidad = $_POST["especialidad1"];
+	$remuneracion = $_POST["remuneracion1"];
+	$seguro = $_POST["seguro1"];
+	$genero = $_POST["genero1"];
+	$telefono = $_POST["telefono1"];
+	$email = $_POST["email1"];
+	$apellidos = strtoupper($apellidos);
+	$nombres = strtoupper($nombres);
+	$direccion = strtoupper($direccion);
+	$resolucion = strtoupper($resolucion);
+	$especialidad = strtoupper($especialidad);
+	$email = strtolower($email);
+	$data = new MySqlDatabase(DATASERVER, DATACATALOG, USERNAME, USERPWD);
+    $data->Connect();
+	$q = "INSERT INTO personal VALUES ('$dni', '$fechareg',  '$apellidos', '$nombres', '$direccion', '$contrato', '$fecharfin', '$resolucion', '$tipo', '$nivel', '$asignacion', '$dependencia', '$area', '$titulo', '$especialidad', '$remuneracion', '$seguro', '$genero', '$telefono', '$email')";
+    $data->ExecuteQuery($q);
+	echo '<script>javascript:window.close();</script>';
+?>

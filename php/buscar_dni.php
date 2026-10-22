@@ -1,0 +1,52 @@
+<link href="../css/estilos.css" rel="stylesheet" type="text/css" />
+<form name="f1" id="f1" action="personal_tarjeta.php">
+<table width="566" border="0" cellpadding="0" cellspacing="0" bgcolor="#D4D0C8" class="tabla1">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="21" height="22">&nbsp;</td>
+    <td width="517">&nbsp;</td>
+    <td width="26">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="33">&nbsp;</td>
+    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="tabla1">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="515" height="31" align="center" valign="middle" bgcolor="#EBEAE7">BUSCAR REMUNERACION POR DNI </td>
+        </tr>
+    </table></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="18">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="39">&nbsp;</td>
+    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="tabla1">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="15" height="37" valign="top" bgcolor="#EBEAE7"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          <td width="111" valign="middle" bgcolor="#EBEAE7">DNI del Socio  : </td>
+          <td width="232" valign="middle" bgcolor="#EBEAE7">
+<input name="dni" type="text" class="texto" id="dni" size="30" maxlength="8"  >
+<input name="a" type="hidden" id="a" value="8" /></td>
+          <td width="157" valign="middle" bgcolor="#EBEAE7"><div align="center">
+            <input type="button" name="Submit" value="Buscar Socio" onClick="enviarY('marco5','personal_tarjeta.php')" >
+          </div></td>
+          </tr>
+    </table></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="22"></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</form>
+<br/>
+<div class="marco5" id="marco5">
+
+</div>

@@ -1,0 +1,124 @@
+<FORM name="isc">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr align="center"> 
+    <td nowrap height="11"> &nbsp;
+
+<select name="example" size="1" onChange="redirect(this.options.selectedIndex)">
+<option selected>---Select1-------------</option>
+<option>Webmaster Sites</option>
+<option>News Sites</option>
+</select>
+
+<select name="stage2" size="1" onChange="redirect1(this.options.selectedIndex)">
+<option value=" " selected> </option>
+<option value=" " selected>---Select2--------------</option>
+<option value=" " selected>---Select2--------------</option>
+</select>
+
+<select name="stage3" size="1" onChange="redirect2(this.options.selectedIndex)">
+<option value=" " selected> </option>
+<option value=" " selected>---Select3----------------</option>
+<option value=" " selected>---Select3----------------</option>
+</select>
+
+<script>
+<!--
+
+/*
+Triple Combo Script Credit
+By Hamid Cheheltani/ JavaScript Kit (http://www.javascriptkit.com)
+Visit http://javascriptkit.com for this and over 400+ other scripts
+*/
+
+var groups=document.isc.example.options.length
+var group=new Array(groups)
+for (i=0; i<groups; i++)
+group[i]=new Array()
+
+group[0][0]=new Option("---Select2---"," ");
+
+group[1][0]=new Option("Now Select This One"," ");
+group[1][1]=new Option("JavaScript","47");
+group[1][2]=new Option("CSS","46");
+group[1][3]=new Option("Ajax","45");
+
+group[2][0]=new Option("Now Select This One"," ");
+group[2][1]=new Option("General News","115");
+group[2][2]=new Option("Technology News","116"); 
+
+var temp=document.isc.stage2
+
+
+function redirect(x){
+for (m=temp.options.length-1;m>0;m--)
+temp.options[m]=null
+for (i=0;i<group[x].length;i++){
+temp.options[i]=new Option(group[x][i].text,group[x][i].value)
+}
+temp.options[0].selected=true
+redirect1(0)
+}
+
+
+
+var secondGroups=document.isc.stage2.options.length
+var secondGroup=new Array(groups)
+for (i=0; i<groups; i++)  {
+secondGroup[i]=new Array(group[i].length)
+for (j=0; j<group[i].length; j++)  {
+secondGroup[i][j]=new Array()  }}
+
+secondGroup[0][0][0]=new Option("---Select 3---"," ");
+secondGroup[1][0][0]=new Option("---Select 3---"," ");
+secondGroup[1][1][0]=new Option("Now Select This One"," ");
+secondGroup[1][1][1]=new Option("JavaScript Kit","http://javascriptkit.com");
+secondGroup[1][1][2]=new Option("Dynamic Drive","http://www.dynamicdrive.com");
+secondGroup[1][1][3]=new Option("Java-Scripts.net","http://java-scripts.net");
+
+secondGroup[1][2][0]=new Option("Now Select This One"," ");
+secondGroup[1][2][1]=new Option("CSS Drive","http://www.cssdrive.com");
+secondGroup[1][2][2]=new Option("CSS Library","http://www.dynamicdrive.com/style/");
+secondGroup[1][2][3]=new Option("CSS Help Forums","http://www.codingforums.com/forumdisplay.php?f=13");
+
+secondGroup[1][3][0]=new Option("Now Select This One"," ");
+secondGroup[1][3][1]=new Option("Ajaxian","http://www.ajaxian.com");
+secondGroup[1][3][2]=new Option("Ajax Scripts","http://www.javascriptkit.com/script/cutindex11.shtml");
+
+secondGroup[2][0][0]=new Option("---Select 3---"," ");
+secondGroup[2][1][0]=new Option("Now Select This One"," ");
+secondGroup[2][1][1]=new Option("CNN","http://www.cnn.com");
+secondGroup[2][1][2]=new Option("MSNBC","http://www.msnbc.com");
+secondGroup[2][1][3]=new Option("ABC News","http://www.abcnews.com");
+
+secondGroup[2][2][0]=new Option("Now Select A Page"," ");
+secondGroup[2][2][1]=new Option("News.com","http://www.news.com");
+secondGroup[2][2][2]=new Option("Wired","http://www.wired.com");
+
+var temp1=document.isc.stage3
+function redirect1(y){
+for (m=temp1.options.length-1;m>0;m--)
+temp1.options[m]=null
+for (i=0;i<secondGroup[document.isc.example.options.selectedIndex][y].length;i++){
+temp1.options[i]=new Option(secondGroup[document.isc.example.options.selectedIndex][y][i].text,secondGroup[document.isc.example.options.selectedIndex][y][i].value)
+}
+temp1.options[0].selected=true
+}
+
+function redirect2(z){
+window.location=temp1[z].value
+}
+
+//-->
+</script>
+
+		</td>
+  </tr>
+</table>
+</FORM>.
+<script type="text/javascript">
+			function carga(nombre)
+			{
+   				var nombre = form1.tipo1.value;
+			}
+			alert(nombre)
+		</script>

@@ -1,0 +1,30 @@
+<?php
+	session_start();
+	require("../utiles/config.php");
+	require("../utiles/mysqldatabase.php");
+	$dniper = $_POST['dniper1'];
+	$fecharper = $_POST['fecharper1'];
+	$apellidosper = $_POST['apellidosper1'];
+	$nombresper = $_POST['nombresper1'];
+	$direccionper = $_POST['direccionper1'];
+	$contratoper = $_POST['contratoper1'];
+	$resolucionper = $_POST['resolucionper1'];
+	$nivelper = $_POST['nivelper1'];
+	$dependenciaper = $_POST['dependenciaper1'];
+	$tituloper = $_POST['tituloper1'];
+	$remuneracionper = $_POST['remuneracionper1'];
+	$generoper = $_POST['generoper1'];
+	$telefonoper = $_POST['telefonoper1'];
+	$emailper = $_POST['emailper1'];
+	$promo = $_GET['promo'];
+	$apellidosper = strtoupper($apellidosper);
+	$nombresper = strtoupper($nombresper);
+	$direccionper = strtoupper($direccionper);
+	$resolucionper = strtoupper($resolucionper);
+	$emailper = strtolower($emailper);
+	$data = new MySqlDatabase(DATASERVER, DATACATALOG, USERNAME, USERPWD);
+    $data->Connect();
+	$q = "UPDATE personal SET dniper='".$dniper."', fecharper='".$fecharper. "', apellidosper='".$apellidosper."', nombresper='".$nombresper."', direccionper='".$direccionper."', contratoper='".$contratoper."', resolucionper='".$resolucionper."', nivelper='".$nivelper."', dependenciaper='".$dependenciaper."', tituloper='".$tituloper."', remuneracionper ='".$remuneracionper."', generoper='".$generoper."', telefonoper='".$telefonoper."', emailper='".$emailper."' WHERE dniper = $promo";
+    $data->ExecuteQuery($q);
+	echo '<script>javascript:window.close();</script>';
+?>
